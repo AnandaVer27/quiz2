@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupIphones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_iphone15_pro_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 15 Pro Max (300.000)"
+            android:tag="300000"/>
+
+        <RadioButton
+            android:id="@+id/radio_iphone15_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 15 Pro (280.000)"
+            android:tag="280000"/>
+
+        <RadioButton
+            android:id="@+id/radio_iphone14_pro_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 14 Pro Max (250.000)"
+            android:tag="250000"/>
+
+        <RadioButton
+            android:id="@+id/radio_iphone14_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 14 Pro (200.000)"
+            android:tag="200000"/>
+
+        <RadioButton
+            android:id="@+id/radio_iphone13_pro_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 13 Pro Max (100.000)"
+            android:tag="100000"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tambahan:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_airpods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AirPods (20.000)"
+            android:tag="20000"/>
+
+        <RadioButton
+            android:id="@+id/radio_cassing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cassing (10.000)"
+            android:tag="10000"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Berapa hari rental"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hitung Total" />
+</LinearLayout>
